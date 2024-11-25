@@ -1,0 +1,75 @@
+# opsi bronze ujian
+
+# =========================
+# TAMPILAN MENU TOKO ROTI
+# =========================
+
+def lihat_produk():
+    print("""
+Produk Roti Vaganza :
+1. Roti Coklat Rp.6000
+2. Roti Keju Rp.7000
+3. Roti Daging Ayam Rp.10000
+4. Roti Pizza Rp.15000                                        
+""")
+
+def pembelian_produk():
+    print("""
+Produk Roti Vaganza :
+1. Roti Coklat Rp.6000
+2. Roti Keju Rp.7000
+3. Roti Daging Ayam Rp.10000
+4. Roti Pizza Rp.15000                                        
+""")
+    pilihan = input('Kamu Mau beli Roti Apa : ')
+    if pilihan == '1':
+        print('Roti Coklat')
+        jumlah = int(input('Jumlah : '))
+        harga_jumlah = 6000 * jumlah
+        validation = input(f'Yakin membeli roti coklat sebanyak {jumlah} seharga {harga_jumlah} (y/n) : ')
+        print('Berhasil, Terimakasih Telah Berbelanja')
+        with open('HARDPUSH/dummy.txt','w') as file:
+            file.write(f'Roti Coklat\n')
+            file.write(f'Jumlah : {jumlah} \n')
+            file.write(f'Harga persatuan : 6000 \n')
+            file.write(f'Total Harga : {harga_jumlah}')
+
+def cek_stok():
+    print('tes')
+
+def cetak_struk():
+    print('Berikut Struk Belanja Anda : \n')
+    struk = open('HARDPUSH/dummy.txt','r')
+    print(struk.read())
+def main():
+
+    while True:
+        print("""
+===========================
+SELAMAT DATANG DI TOKO ROTI
+===========================
+Silahkan Pilih Menu dibawah Ini :
+1. Lihat Produk Roti
+2. Pembelian
+3. Cek Stok Produk
+4. Cetak Struk Pembelian
+5. Exit                                                             
+""")
+        inputan = input('Silahkan Pilih Menu (1-5) : ')
+        if inputan == '1':
+            lihat_produk()
+        elif inputan == '2':
+            pembelian_produk()
+        elif inputan == '3':
+            cek_stok()
+        elif inputan == '4':
+            cetak_struk()
+        elif inputan == '5':
+            print('Terimakasih telah berkunjung')
+            break
+        else :
+            print('Maaf Inputan yang anda pilih tidak tersedia.')
+            break
+
+if __name__ == '__main__':
+    main()
