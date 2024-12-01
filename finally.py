@@ -53,7 +53,7 @@ def beli_parfum(saldo, stok_parfum1, stok_parfum2, stok_parfum3):
         jenis = 'Frozen Shower De blower'
         jumlah = int(input('Masukan Jumlah yang ingin dibeli : '))
         harga_jumlah = jumlah * harga 
-        if stok_parfum1 < jumlah :
+        if stok_parfum2 < jumlah :
             print('Maaf Stok tidak tersedia')
         else:
             if harga_jumlah > saldo:
@@ -75,7 +75,7 @@ def beli_parfum(saldo, stok_parfum1, stok_parfum2, stok_parfum3):
         jenis = 'Chill Guy Mist Underperformance'
         jumlah = int(input('Masukan Jumlah yang ingin dibeli : '))
         harga_jumlah = jumlah * harga 
-        if stok_parfum1 < jumlah :
+        if stok_parfum3 < jumlah :
             print('Maaf Stok tidak tersedia')
         else:
             if harga_jumlah > saldo:
@@ -100,8 +100,8 @@ def cetak_struk():
 
 def main():
     saldo = 1000000
-    stok_parfum1 = 10
-    stok_parfum2 = 10
+    stok_parfum1 = 8
+    stok_parfum2 = 5
     stok_parfum3 = 5
 
     while True:
