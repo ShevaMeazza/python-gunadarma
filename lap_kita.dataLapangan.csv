@@ -1,0 +1,5 @@
+_id,id,nama,jenis,harga,deskripsi,foto,filter
+6742be944658393168d82c4b,1,Lapangan 1,Lapangan Badminton,100000,Lapangan badminton dengan keadaan yang bagus untuk bermain sendiri maupun bersama teman,lapangan1.jpg,Badminton
+6742be944658393168d82c4c,2,Lapangan 2,Lapangan Badminton,100000,Lapangan badminton dengan keadaan yang bagus untuk bermain sendiri maupun bersama teman,lapangan2.jpg,Badminton
+6742be944658393168d82c4d,3,Lapangan 1,Lapangan Futsal,150000,Lapangan futsal yang nyaman dengan rumput sintetis menyajikan pengalaman bermain yang mantap,futsal.jpg,Futsal
+6742be944658393168d82c4e,4,Lapangan 2,Lapangan Futsal,150000,Lapangan futsal yang nyaman dengan rumput sintetis menyajikan pengalaman bermain yang mantap,futsal1.jpg,Futsal
